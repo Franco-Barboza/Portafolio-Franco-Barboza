@@ -1,0 +1,10 @@
+.about .p{
+    font-size: var(--fs-p);
+    font-family: var(--p-font);
+    text-align: justify;
+}
+
+.about .about-name{
+    color: var(--silver);
+    font-weight: 700;
+}

@@ -1,0 +1,60 @@
+.project .my-projects{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 3em;
+}
+
+.my-projects .article{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;  
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.article .img{
+    background-color: rgb(255, 255, 255);
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100%;
+    transition: all .2s;
+}
+
+.article:hover .img {
+    transform: scale(1.12);
+}
+
+.article .project-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000b0;
+    opacity: 0;
+    transition: .2s ease;
+    
+}
+
+.article .project-details:hover{
+    color: var(--gold-leaf);
+    opacity: 1;
+}
+
+.article h4{
+    font-size: 1.4rem;
+    margin-bottom: .7rem;
+    font-weight: bold;
+}
+
+.article p{
+    margin: 1rem;
+    font-size: .9rem;
+    font-family: var(--p-font);
+    font-weight: 600;
+}

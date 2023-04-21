@@ -1,0 +1,25 @@
+.home .sub-title{
+    font-size: var(--fs-subtitle);
+    margin-top: -1rem;
+    color: var(--gold-leaf);
+    font-family: var(--sub-title-font);
+    font-weight: bold;
+}
+
+.home .cv{
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    color: var(--silver);
+    padding: 1.2rem 2.2rem;
+    border: 2px solid #594D46;
+    border-radius: .7rem;
+    transition: all .2s;
+}
+
+.home .cv:hover{
+    border-radius: 0;
+    border-color: #D1B280;
+    background-color: black;
+    color: var(--gold-leaf);
+}
